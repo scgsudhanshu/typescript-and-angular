@@ -1,0 +1,52 @@
+angular tutorials : 
+
+1. angular js is a library but angular is a framework
+2. Developed by google
+3. benefits of angular : 1. Speed and performance 2. smaller applications 3. modular applications 4. Use typescript 5. single page applications 6. Cross platform
+
+blocks of angular : 
+1. modules : just like a class or container , an angular application has atleast one root module and if there are more than one then they are the featured modules 
+2. components : building blocks it usually consist opf multiple parts like ; ts file , templates , testing and css files
+3. services : function or objects to perform a specific task
+4. directive : to extend the power of HTML attributes and change the appearance and behaviour of DOM Element
+
+
+PWA : Progressive Web Applications : Just like an app 
+
+TypeScript : Superset of Javascript 
+2. Strongly Typed
+3. Developed by Microsoft
+
+TypeScript provides Type Safety : 
+1. Free from Type Errors 
+2. Free from undefined and null values 
+3. Types are stripped when converting from Ts to js
+
+package.json : to maintain the dependencies 
+
+package-lock.json : to maintain the exact versions of the dependencies for mainitaining the consistency among the environments
+
+tsc config : maintains the configuration for the project 
+target : the version of ecma in which program to compile 
+module : in which you want to run your typescript whether it is browser or OS 
+
+single Page Applications : In this everytime new page is not refreshed so making it fast to view 
+2. It does not make requests to server for every URL requests
+
+Variable assignment is mandatory in typescript
+
+reduce function in js : to calculate each of the number of array like [10,2,3,4] = 10+2+3+4
+
+enum : just like class 
+
+can use const enum to trim some lines of code basically used in production
+
+tuples : just like Arrays but number of element and each element type is defined in ts
+
+any datatype : it suggests that a particular variable has no specific datatype it can be assigned to any values
+be it string or number 
+
+note : try to avoid any as much as possible 
+
+datatypes : string , number , arrays, tuples , any, void , boolean , never , enum
+
