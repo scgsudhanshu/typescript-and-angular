@@ -87,9 +87,62 @@ to run the application use : ng server -o within the project folder
 
 Component : It is the view to be render on the screen
 
+Under Component Annotation : 
+
+Selector : How to identify the particular component in the Angular 
+templateUrl : to set the html file path
+StyleUrls : In Array to define the various style sheets used 
+template : to write inline html
+styles : to write inline styles 
 
 
- 
+ngserve command runs in watch mode means saved changes will be watched and compiled automatically 
+
+if angular.json or package.json changes then it does not watched and need to restart the server again
+prefix in angular.json : should be there to avoid the conflict with other html tags
+
+ng generate component rooms -- to create a new component in angular
+
+binding syntax : to bind the data with the front end appilcations
+
+1. Interpolation : using {{varName}} to bind the data 
+2. Property binding : bind the data with the valid html tag property
+3. Event Binding : To bind the data with the event
+
+Directives : To change the DOM
+
+Structural : Denoted with a star symbol at first place
+			 modify the dom in such a way that elements are added or reduced 
+
+1. ngIf : To put the condition , entire div will be gone from the DOM
+2. ngFor : For Loop
+3. ngSwitch : Just like switch case with use of *ngSwitchCase and *ngSwitchDefault
+
+Attribute :  Star symbol not needed 
+			 Only modifies the element not to add or reduce the element in dom
+
+1. ngClass : To use differnet styles for the different users according to their preferences
+
+2. ngStyle : To set Style
+
+
+@Input : to communicate between parent and child component : used in the child component to use the property as attribute in the parent component : lets data to be send from parent to child component
+
+@Output : To send data from child to parent component : Generally sends the event 
+
+emit function : to send the data to the parent component
+
+to exchange the data between parent and child component using @Output
+In child component : 
+1. Create an Event with eventEmitter Class using @Output
+2. create a div in html with event and define a function 
+3. in the ts file , write the function to emit the event with the data
+
+In parent component : 
+1. In html file where the tag is defined , define the event with some local function for the event with args $event for passing the emitted event
+2. In the ts file write the function and use the data accordingly 
+
+Change Detection : onPush : It will not allow to change the same object : concept of immutability 
 
 
 
